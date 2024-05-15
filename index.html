@@ -5,31 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niklas Vilnersson - AI Expert</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300&family=Georgia&display=swap');
 
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             font-weight: 300;
             margin: 0;
             padding: 0;
-            background-color: #C0C0C0; /* Silver bakgrundsfärg */
+            background-color: #D9D9D9; /* Ljusgrå bakgrundsfärg */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             text-align: center;
-            color: #333;
+            color: #003366; /* Marinblå textfärg */
         }
         .container {
             padding: 20px;
-            max-width: 800px;
+            max-width: 1200px;
             width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF; /* Vit bakgrund för kontrast */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga för djup */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header .tagline {
+            font-size: 3em;
+            font-weight: bold;
+            color: #003366; /* Marinblå textfärg */
+            margin: 20px 0;
+        }
+        .header .sub-tagline {
+            font-size: 2em;
+            color: #7FABD2; /* Ljusblå textfärg */
+            margin: 20px 0;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            text-align: left;
         }
         .text-content {
-            margin-bottom: 20px;
+            flex: 1;
+            margin-right: 20px;
         }
         .text-content .greeting {
-            font-family: 'Pacifico', cursive;
+            font-family: 'Georgia', serif;
             font-size: 1.5em;
             color: #555;
             margin: 0;
@@ -39,81 +65,101 @@
             margin: 10px 0;
             font-weight: normal;
         }
-        .text-content h2 {
-            font-size: 1.5em;
-            margin: 20px 0;
-            color: #555;
-        }
         .text-content p {
             font-size: 1.2em;
             line-height: 1.6;
             color: #666;
         }
-        .cta-button {
-            margin: 20px 0;
-            padding: 10px 20px;
+        .contact-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
             font-size: 1.2em;
-            color: white;
-            background-color: #0073b1;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
+            color: #0073b1;
         }
-        .cta-button:hover {
-            background-color: #005b8c;
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #0073b1;
+            font-weight: light;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .contact-info a svg {
+            margin-right: 8px;
+            fill: #0073b1;
         }
         .image-container {
-            margin: 20px auto;
-            max-width: 200px;
+            max-width: 300px;
         }
         .image-container img {
             width: 100%;
             border-radius: 10px;
         }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info a {
-            display: block;
-            margin: 10px 0;
-            color: #0073b1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
         @media (max-width: 768px) {
+            .header .tagline {
+                font-size: 2em;
+            }
+            .header .sub-tagline {
+                font-size: 1.5em;
+            }
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-content {
+                margin-right: 0;
+                text-align: center;
+            }
             .text-content h1 {
                 font-size: 2em;
             }
-            .text-content h2 {
-                font-size: 1.5em;
-            }
             .text-content p {
                 font-size: 1em;
+            }
+            .image-container {
+                max-width: 200px;
+                margin-top: 20px;
+            }
+            .contact-info {
+                justify-content: center;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="text-content">
-            <p class="greeting">Hej där!</p>
-            <h1>Jag är Niklas Vilnersson</h1>
-            <h2>Bygger din framtid med AI | Föreställ dig möjligheterna…</h2>
-            <p>Jag är passionerad om att driva innovation och tillväxt med AI-teknologi. Med en stark bakgrund inom verksamhetsutveckling och ledarskap, är mitt mål att revolutionera arbetssätt och skapa verkligt värde.</p>
-            <p>Kontakta mig för att utforska hur vi kan bygga din framtid med AI och föreställa oss möjligheterna tillsammans.</p>
-            <a href="mailto:niklas.vilnersson@gmail.com" class="cta-button">Kontakta mig</a>
-            <div class="contact-info">
-                <a href="mailto:niklas.vilnersson@gmail.com">niklas.vilnersson@gmail.com</a>
-                <a href="tel:+46706626388">+46 70 662 63 88</a>
-                <a href="https://www.linkedin.com/in/niklasvilnersson" target="_blank">LinkedIn-profil</a>
-            </div>
+        <div class="header">
+            <h1 class="tagline">Släpp loss kraften</h1>
+            <h2 class="sub-tagline">Föreställ dig möjligheterna med AI</h2>
         </div>
-        <div class="image-container">
-            <img src="path/to/your/image.jpg" alt="Bild på Niklas Vilnersson">
+        <div class="content">
+            <div class="text-content">
+                <p class="greeting">Hej där!</p>
+                <h1>Jag är Niklas Vilnersson</h1>
+                <p>Och om du har hittat hit till min lilla del av internet, är nyfiken på AI och kan föreställa dig de möjligheter det kan erbjuda (eller kanske flörtar med tanken).</p>
+                <div class="contact-info">
+                    <a href="mailto:niklas.vilnersson@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 13.065l-11.623-8.065h23.246l-11.623 8.065zm11.623-9.065h-23.246c-1.016 0-1.839.823-1.839 1.839v13.322c0 1.016.823 1.839 1.839 1.839h23.246c1.016 0 1.839-.823 1.839-1.839v-13.322c0-1.016-.823-1.839-1.839-1.839zm-12.623 9.935l-11-7.59v12.789h22v-12.789l-11 7.59z"/></svg>
+                        niklas.vilnersson@gmail.com
+                    </a>
+                    <a href="tel:+46706626388">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.615 10.264c1.348 2.675 3.627 4.953 6.301 6.301l2.096-2.096c.206-.206.496-.274.751-.216 1.104.242 2.269.373 3.388.373.414 0 .75.336.75.75v3.588c0 .414-.336.75-.75.75-10.753 0-19.5-8.747-19.5-19.5 0-.414.336-.75.75-.75h3.588c.414 0 .75.336.75.75 0 1.119.131 2.284.373 3.388.058.255-.01.545-.216.751l-2.096 2.096z"/></svg>
+                        +46 70 662 63 88
+                    </a>
+                    <a href="https://www.linkedin.com/in/niklasvilnersson" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.666 19h-2.663v-10h2.663v10zm-1.332-11.151c-.853 0-1.548-.695-1.548-1.548s.695-1.548 1.548-1.548c.854 0 1.548.695 1.548 1.548s-.694 1.548-1.548 1.548zm13.666 11.151h-2.664v-5.413c0-1.294-.024-2.961-1.805-2.961-1.805 0-2.083 1.41-2.083 2.867v5.507h-2.664v-10h2.559v1.366h.036c.356-.674 1.226-1.384 2.525-1.384 2.701 0 3.201 1.777 3.201 4.091v5.927z"/></svg>
+                        LinkedIn-profil
+                    </a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/Nicxe/myweb/main/niklas%20webb.png" alt="Bild på Niklas Vilnersson">
+            </div>
         </div>
     </div>
 </body>
